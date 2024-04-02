@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="table.css" rel="stylesheet" type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="row">
+      <h1> 🩰 password manager 🩰</h1>
+    </div>
+
+    <div class="row">
+      <div class="column s25">
+        <div class="pw-app">
+          <div class="row">
+            <div for="app" class="inp">
+              <input type="app" id="appBox" required placeholder="&nbsp;" class="textInput">
+              <span class="focus-bg"></span>
+              <div class="label">application</div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div for="email" class="inp">
+              <input type="email" id="emailBox" required placeholder="&nbsp;" class="textInput">
+              <span class="focus-bg"></span>
+              <div class="label">email</div>
+            </div>
+          </div>
+          <div class="row">
+            <div for="password" class="inp">
+              <input type="password" id="passwordBox" required placeholder="&nbsp;" class="textInput">
+              <span class="focus-bg"></span>
+              <div class="label">password</div>
+            </div>
+          </div>
+          <div id="buttonDiv" class="row">
+            <button type="submit" onclick="addPassword()">submit</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="column s75">
+        <div class="pw-app">
+          <div class="row">
+
+            <div class="tableContainer">
+              <ul class="responsive-table">
+                <li class="table-header">
+                  <div class="col col-1">application</div>
+                  <div class="col col-2">email</div>
+                  <div class="col col-3">password</div>
+                </li>
+                <div id="appendContainer">
+                  <li class="table-row">
+                    <div class="col col-1" data-label="application">spotify</div>
+                    <div class="col col-2" data-label="email">jyan0110@gmail.com</div>
+                    <div class="col col-3" data-label="password"><input type="password" readonly>ilovejason</input>
+                      <button onclick="showPassword()">show</button></div>
+                  </li>
+                </div>
+              </ul>
+              </table>
+              <!-- <button onclick="showPasswords()">show passwords</button> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

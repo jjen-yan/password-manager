@@ -1,0 +1,139 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Poppins';
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e490bd, #f9d2e5);
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #e490bd;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 40px;
+  margin: 10px;
+}
+
+.pw-app {
+  /* width: 100%; */
+  background: #fff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+  justify-content: center;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px 0px 10px;
+}
+
+.inp {
+  /* position: relative; */
+  margin: auto;
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.label {
+  padding: 0px, 10px 10px 10px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+  transition: all .2s ease;
+  text-align: center;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+.focus-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.textInput {
+  /* position: absolute; */
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding: 12px 12px 0px 12px;
+  margin: 18px 12px 0px 12px;
+  border: 0;
+  font-family: inherit;
+  height: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0.02);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .2);
+  color: #000;
+  transition: all .15s ease;
+
+  &:hover {
+    background: rgba(0, 0, 0, .1);
+  }
+
+  &:not(:placeholder-shown) {
+    color: rgba($dark, .5);
+    transform: translate3d(0, 0, 0) scale(.97);
+  }
+
+  &:focus {
+    background: rgba(0, 0, 0, .05);
+    outline: none;
+    box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .2);
+
+    /* +.label {
+      transform: translate3d(0, -12px, 0) scale(.75);
+
+      +.focus-bg {
+        transform: scaleX(1);
+        transition: all .1s ease;
+      }
+    } */
+  }
+}
+
+#buttonDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.column.s25 {
+  flex-basis: 30%;
+}
+
+.column.s75 {
+  flex-basis: 70%;
+}
+
+input {
+  outline: none;
+}
+
