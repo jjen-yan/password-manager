@@ -10,7 +10,7 @@ body {
 .container {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(135deg, #e490bd, #f9d2e5);
+  background: linear-gradient(135deg, #eeb4d3, #f9d2e5);
   display: flex;
   flex-direction: column;
 }
